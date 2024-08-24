@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicação sobre HTML</title>
+</head>
+<body>
+    <h1>O que é HTML?</h1>
+    <p>HTML é uma linguagem de marcação usada para estruturar e apresentar conteúdo na web. Diferente de linguagens de programação, o HTML não é utilizado para criar funcionalidades lógicas, mas sim para organizar o conteúdo que será exibido no navegador.</p>
+
+    <h2>Estrutura Básica de um Documento HTML</h2>
+    <p>Todo documento HTML segue uma estrutura básica, que inclui elementos essenciais:</p>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Título da Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Conteúdo da página vai aqui --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+    <ul>
+        <li><strong>&lt;!DOCTYPE html&gt;</strong>: Declaração do tipo de documento. Informa ao navegador que o documento está usando HTML5.</li>
+        <li><strong>&lt;html&gt;</strong>: Elemento raiz que engloba todo o conteúdo da página.</li>
+        <li><strong>&lt;head&gt;</strong>: Contém metadados, como o título da página e links para CSS ou scripts.</li>
+        <li><strong>&lt;meta charset="UTF-8"&gt;</strong>: Define a codificação de caracteres do documento.</li>
+        <li><strong>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</strong>: Configura a visualização em dispositivos móveis.</li>
+        <li><strong>&lt;title&gt;</strong>: Define o título que aparecerá na aba do navegador.</li>
+        <li><strong>&lt;body&gt;</strong>: Onde o conteúdo visível da página é colocado.</li>
+    </ul>
+
+    <h2>Elementos HTML</h2>
+    <p>Elementos HTML são os blocos de construção de uma página da web. Eles são representados por tags. Alguns exemplos comuns incluem:</p>
+    <ul>
+        <li><strong>&lt;h1&gt; a &lt;h6&gt;</strong>: Títulos, com &lt;h1&gt; sendo o mais importante e &lt;h6&gt; o menos.</li>
+        <li><strong>&lt;p&gt;</strong>: Parágrafo de texto.</li>
+        <li><strong>&lt;a&gt;</strong>: Link de hipertexto.</li>
+        <li><strong>&lt;img&gt;</strong>: Imagem.</li>
+        <li><strong>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</strong>: Listas não ordenadas, ordenadas e itens de lista, respectivamente.</li>
+        <li><strong>&lt;div&gt;</strong>: Container genérico, usado para agrupar outros elementos.</li>
+        <li><strong>&lt;span&gt;</strong>: Container em linha, utilizado para estilização de parte de texto.</li>
+    </ul>
+
+    <h2>Atributos HTML</h2>
+    <p>Atributos fornecem informações adicionais sobre elementos. São definidos dentro da tag de abertura do elemento.</p>
+    <p>Exemplo:</p>
+    <pre><code>
+&lt;a href="https://example.com" target="_blank"&gt;Visite o Example&lt;/a&gt;
+    </code></pre>
+    <ul>
+        <li><strong>href</strong>: Define o URL para onde o link aponta.</li>
+        <li><strong>target</strong>: Especifica onde abrir o documento vinculado (por exemplo, _blank para uma nova aba).</li>
+    </ul>
+
+    <h2>Semântica HTML</h2>
+    <p>A semântica refere-se ao uso apropriado de elementos HTML para representar o significado do conteúdo. O uso correto melhora a acessibilidade e SEO. Exemplos de elementos semânticos incluem:</p>
+    <ul>
+        <li><strong>&lt;header&gt;</strong>: Cabeçalho da página ou seção.</li>
+        <li><strong>&lt;nav&gt;</strong>: Navegação.</li>
+        <li><strong>&lt;article&gt;</strong>: Conteúdo independente, como um artigo de blog.</li>
+        <li><strong>&lt;section&gt;</strong>: Agrupamento de conteúdo relacionado.</li>
+        <li><strong>&lt;footer&gt;</strong>: Rodapé da página ou seção.</li>
+    </ul>
+
+    <h2>Formulários em HTML</h2>
+    <p>Formulários permitem a coleta de dados do usuário. São compostos de vários elementos de entrada:</p>
+    <ul>
+        <li><strong>&lt;form&gt;</strong>: Elemento que agrupa todo o formulário.</li>
+        <li><strong>&lt;input&gt;</strong>: Campo de entrada de dados, que pode ser do tipo text, password, email, etc.</li>
+        <li><strong>&lt;label&gt;</strong>: Rótulo associado a um campo de entrada.</li>
+        <li><strong>&lt;textarea&gt;</strong>: Campo de texto longo.</li>
+        <li><strong>&lt;button&gt;</strong>: Botão de envio ou ação.</li>
+    </ul>
+    <p>Exemplo de um formulário simples:</p>
+    <pre><code>
+&lt;form action="/enviar-dados" method="post"&gt;
+    &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+    &lt;input type="text" id="nome" name="nome"&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    
+    &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;
+    </code></pre>
+
+    <h2>Multimídia em HTML</h2>
+    <p>HTML permite a inserção de multimídia, como imagens, vídeos e áudio.</p>
+    <ul>
+        <li><strong>&lt;img&gt;</strong>: Insere uma imagem. Atributos comuns incluem src (fonte) e alt (texto alternativo).</li>
+        <li><strong>&lt;video&gt;</strong>: Insere um vídeo. Pode ter atributos como controls, autoplay, loop.</li>
+        <li><strong>&lt;audio&gt;</strong>: Insere áudio, também com atributos como controls.</li>
+    </ul>
+    <p>Exemplo de uso:</p>
+    <pre><code>
+&lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;
+&lt;video src="video.mp4" controls&gt;&lt;/video&gt;
+&lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;
+    </code></pre>
+
+    <h2>Links e Navegação</h2>
+    <p>Os links são criados usando a tag &lt;a&gt;. Eles podem levar a outras páginas, seções na mesma página, arquivos para download, entre outros.</p>
+    <p>Exemplo:</p>
+    <pre><code>
+&lt;a href="https://example.com"&gt;Visite o Example&lt;/a&gt;
+&lt;a href="#secao1"&gt;Vá para a Seção 1&lt;/a&gt;
+    </code></pre>
+
+    <h2>Tabelas em HTML</h2>
+    <p>As tabelas são usadas para apresentar dados tabulares. Principais elementos:</p>
+    <ul>
+        <li><strong>&lt;table&gt;</strong>: Define uma tabela.</li>
+        <li><strong>&lt;tr&gt;</strong>: Define uma linha de tabela.</li>
+        <li><strong>&lt;td&gt;</strong>: Define uma célula de dados.</li>
+        <li><strong>&lt;th&gt;</strong>: Define uma célula de cabeçalho.</li>
+    </ul>
+    <p>Exemplo de tabela:</p>
+    <pre><code>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nome&lt;/th&gt;
+        &lt;th&gt;Idade&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;João&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+    </code></pre>
+
+    <h2>Boas Práticas em HTML</h2>
+    <ul>
+        <li><strong>Validação</strong>: Use validadores HTML para garantir que seu código segue os padrões web.</li>
+        <li><strong>Acessibilidade</strong>: Adicione atributos como alt em imagens e use elementos semânticos para melhorar a acessibilidade.</li>
+        <li><strong>SEO</strong>: Utilize elementos semânticos e meta tags corretamente para otimizar seu site para motores de busca.</li>
+        <li><strong>Mobile-first</strong>: Adote práticas de design responsivo, utilizando o &lt;meta viewport&gt; e media queries no CSS.</li>
+    </ul>
+
+    <h2>Evolução e Versões do HTML</h2>
+    <p>O HTML passou por várias versões, começando pelo HTML 1.0 até o HTML5, que é a versão atual e mais amplamente usada. HTML5 trouxe novos elementos semânticos, suporte nativo a multimídia, APIs de JavaScript, entre outras funcionalidades avançadas.</p>
+
+    <h2>Ferramentas e Recursos</h2>
+    <ul>
+        <li><strong>Editores de Texto</strong>: Visual Studio Code, Sublime Text, Notepad++.</li>
+        <li><strong>Validação</strong>: W3C Validator.</li>
+        <li><strong>Recursos Online</strong>: MDN Web Docs, W3Schools.</li>
+    </ul>
+</body>
+</html>
